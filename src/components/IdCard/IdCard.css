@@ -1,0 +1,15 @@
+.idCard__container {
+  margin: 10px 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.idCard__image {
+  margin: 5px;
+}
+
+.idCard__info {
+  margin: 5px;
+  line-height: 0.2rem;
+}
