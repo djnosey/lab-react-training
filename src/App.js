@@ -3,11 +3,12 @@ import React from 'react';
 import './App.css';
 import BoxColor from './components/BoxColor/BoxColor';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
+import Dice from './components/Dice/Dice';
 import Greetings from './components/Greetings/Greetings';
 import IdCard from './components/IdCard/IdCard';
 import LikeButton from './components/LikeButton/LikeButton';
 import Random from './components/Random/Random';
-import Rating from './components/Rating';
+import Rating from './components/Rating/Rating';
 
 function App() {
   return (
@@ -71,6 +72,11 @@ function App() {
         img="/img/persons/maxence.png"
         imgClicked="/img/persons/maxence-glasses.png"
       />
+
+      <div className="iteration10">
+        <h1>Iteration 10 - Dice</h1>
+        <Dice />
+      </div>
     </div>
   );
 }
