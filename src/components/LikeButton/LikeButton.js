@@ -28,7 +28,7 @@ function LikeButton() {
         style={{ backgroundColor: color, width: '100px', height: '50px' }}
         onClick={handleClick}
       >
-        {count}
+        {count} likes
       </button>
     </div>
   );

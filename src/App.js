@@ -1,11 +1,13 @@
 import React from 'react';
 
 import './App.css';
+import BoxColor from './components/BoxColor/BoxColor';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import Greetings from './components/Greetings/Greetings';
 import IdCard from './components/IdCard/IdCard';
 import LikeButton from './components/LikeButton/LikeButton';
 import Random from './components/Random/Random';
+import Rating from './components/Rating';
 
 function App() {
   return (
@@ -41,6 +43,23 @@ function App() {
       <Random min={10} max={2100} />
       <Random min={500} max={650} />
       <Random min={13} max={20} />
+
+      <div className="iteration4">
+        <h1>Iteration 4 - Box Color </h1>
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
+      </div>
+
+      <div className="iteration6">
+        <h1>Iteration 6 - Rating </h1>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
+      </div>
+
       <h1>Iteration 8 - Fancy Like Buttons </h1>
       <div className="likeButtons">
         <LikeButton />

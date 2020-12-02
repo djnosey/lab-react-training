@@ -1,4 +1,5 @@
 import React from 'react';
+import './Greetings.css';
 
 function Greetings(props) {
   const languages = {
@@ -20,7 +21,7 @@ function Greetings(props) {
   });
 
   return (
-    <div>
+    <div className="greetings__div">
       {greetingStr} {props.children}
     </div>
   );
