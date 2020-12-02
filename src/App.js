@@ -2,6 +2,7 @@ import React from 'react';
 
 import './App.css';
 import BoxColor from './components/BoxColor/BoxColor';
+import Carousel from './components/Carousel/Carousel';
 import ClickablePicture from './components/ClickablePicture/ClickablePicture';
 import Dice from './components/Dice/Dice';
 import Greetings from './components/Greetings/Greetings';
@@ -47,7 +48,7 @@ function App() {
 
       <div className="iteration4">
         <h1>Iteration 4 - Box Color </h1>
-        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={200} g={32} b={12} />
         <BoxColor r={128} g={255} b={0} />
       </div>
 
@@ -75,7 +76,19 @@ function App() {
 
       <div className="iteration10">
         <h1>Iteration 10 - Dice</h1>
+        <h3>click me</h3>
         <Dice />
+      </div>
+
+      <div className="iteration11">
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg',
+          ]}
+        />
       </div>
     </div>
   );
